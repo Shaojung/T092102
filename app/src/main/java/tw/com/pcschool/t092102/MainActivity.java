@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         ListView lv = (ListView) findViewById(R.id.listView);
         SimpleAdapter adapter = new SimpleAdapter(MainActivity.this,
                                     data,
-                                    android.R.layout.simple_list_item_2,
+                                    R.layout.mylist,
                                     new String[] {"city", "code"},
-                                    new int[] {android.R.id.text1, android.R.id.text2});
+                                    new int[] {R.id.textView, R.id.textView2});
         lv.setAdapter(adapter);
 
     }
